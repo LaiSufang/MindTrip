@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -8,15 +9,15 @@ public class Movement : MonoBehaviour
 
     [SerializeField] float moveSpeed = 5f;
 
-    private bool facingBack;
-   
+    //private bool facingBack;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
-        animator = gameObject.GetComponent<Animator>();        
-
+        animator = gameObject.GetComponent<Animator>();   
+     
         //facingBack = false;
 
         // TODO: Rotate the character based on arrow key input
@@ -75,5 +76,5 @@ public class Movement : MonoBehaviour
     //    scaler.z *= -1f;
     //    transform.localScale = scaler;
     //}
-    
+
 }

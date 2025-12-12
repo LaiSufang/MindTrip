@@ -18,5 +18,9 @@ public class GameButtons : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+    public void NextButton()
+    {
+        SceneManager.LoadScene("IntroScene");
+    }
 
 }
